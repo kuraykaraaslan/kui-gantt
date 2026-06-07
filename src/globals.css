@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@source "../react/**/*.{ts,tsx}";
+@source "../modules/**/*.{ts,tsx}";
+@source "../src/**/*.{ts,tsx}";
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-primary-subtle: var(--primary-subtle);
+  --color-primary-fg: var(--primary-fg);
+  --color-secondary: var(--secondary);
+  --color-surface-base: var(--surface-base);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-overlay: var(--surface-overlay);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-disabled: var(--text-disabled);
+  --color-text-inverse: var(--text-inverse);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-focus: var(--border-focus);
+  --color-success: var(--success);
+  --color-success-subtle: var(--success-subtle);
+  --color-success-fg: var(--success-fg);
+  --color-warning: var(--warning);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-error: var(--error);
+  --color-error-subtle: var(--error-subtle);
+  --color-info: var(--info);
+  --color-info-subtle: var(--info-subtle);
+}
+
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-active: #1d4ed8;
+  --primary-subtle: #eff6ff;
+  --primary-fg: #ffffff;
+  --secondary: #8b5cf6;
+  --surface-base: #ffffff;
+  --surface-raised: #f9fafb;
+  --surface-overlay: #f3f4f6;
+  --surface-sunken: #e5e7eb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-disabled: #9ca3af;
+  --text-inverse: #ffffff;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --border-focus: #3b82f6;
+  --success: #22c55e;
+  --success-subtle: #f0fdf4;
+  --success-fg: #14532d;
+  --warning: #f59e0b;
+  --warning-subtle: #fffbeb;
+  --error: #ef4444;
+  --error-subtle: #fef2f2;
+  --info: #06b6d4;
+  --info-subtle: #ecfeff;
+}
+
+.dark {
+  --surface-base: #111827;
+  --surface-raised: #1f2937;
+  --surface-overlay: #374151;
+  --surface-sunken: #0f172a;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-disabled: #6b7280;
+  --border: #374151;
+  --border-strong: #4b5563;
+  --primary-subtle: #1e3a5f;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--surface-base); color: var(--text-primary); }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
