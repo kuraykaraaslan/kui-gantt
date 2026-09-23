@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from "react";
-import type { DragMode, Task } from "../../modules/gantt/gantt.types";
-import { useGanttStoreApi } from "./useGanttStore";
-import { addDays, diffDays, snapToWorkingDay } from "../../modules/gantt/gantt.timeline";
+import type { DragMode, Task } from "../../modules/gantt/gantt.types.js";
+import { useGanttStoreApi } from "./useGanttStore.js";
+import { addDays, diffDays, snapToWorkingDay } from "../../modules/gantt/gantt.timeline.js";
 
 export type UseTaskDragApi = {
   onBarPointerDown: (

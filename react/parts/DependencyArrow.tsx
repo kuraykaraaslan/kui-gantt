@@ -1,7 +1,7 @@
-import { cn } from "../../libs/utils/cn";
-import type { Dependency, Task } from "../../modules/gantt/gantt.types";
-import { BAR_HEIGHT, ROW_HEIGHT } from "../../modules/gantt/gantt.types";
-import { diffDays } from "../../modules/gantt/gantt.timeline";
+import { cn } from "../../libs/utils/cn.js";
+import type { Dependency, Task } from "../../modules/gantt/gantt.types.js";
+import { BAR_HEIGHT, ROW_HEIGHT } from "../../modules/gantt/gantt.types.js";
+import { diffDays } from "../../modules/gantt/gantt.timeline.js";
 
 type Anchor = { x: number; y: number };
 

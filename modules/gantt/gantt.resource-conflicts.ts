@@ -1,4 +1,4 @@
-import type { Task, TaskId } from "./gantt.types";
+import type { Task, TaskId } from "./gantt.types.js";
 
 /**
  * Detect resource over-allocation: tasks sharing an `owner` that overlap in

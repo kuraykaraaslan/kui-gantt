@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import { cn } from "../../libs/utils/cn";
+import { cn } from "../../libs/utils/cn.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import type { ExportFormat } from "../hooks/useExport";
+import type { ExportFormat } from "../hooks/useExport.js";
 
 const LABELS: Record<ExportFormat, string> = { png: "PNG image", pdf: "PDF (Print…)", csv: "CSV" };
 

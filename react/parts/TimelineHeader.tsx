@@ -1,5 +1,5 @@
-import { cn } from "../../libs/utils/cn";
-import type { TimelineScale } from "../../modules/gantt/gantt.timeline";
+import { cn } from "../../libs/utils/cn.js";
+import type { TimelineScale } from "../../modules/gantt/gantt.timeline.js";
 
 type TimelineHeaderProps = { scale: TimelineScale; className?: string };
 

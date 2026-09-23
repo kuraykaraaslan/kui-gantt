@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronDown, faDiamond, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
-import { cn } from "../../libs/utils/cn";
-import type { Task, TaskId, GanttMessages } from "../../modules/gantt/gantt.types";
-import { ROW_HEIGHT, SIDE_PANEL_WIDTH } from "../../modules/gantt/gantt.types";
+import { cn } from "../../libs/utils/cn.js";
+import type { Task, TaskId, GanttMessages } from "../../modules/gantt/gantt.types.js";
+import { ROW_HEIGHT, SIDE_PANEL_WIDTH } from "../../modules/gantt/gantt.types.js";
 
 type FlatRow = { task: Task; depth: number; hasChildren: boolean };
 

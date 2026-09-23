@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import type { Task, TimeUnit } from "../../modules/gantt/gantt.types";
-import { useGanttStoreApi } from "./useGanttStore";
+import type { Task, TimeUnit } from "../../modules/gantt/gantt.types.js";
+import { useGanttStoreApi } from "./useGanttStore.js";
 
 const SCALES: TimeUnit[] = ["day", "week", "month", "quarter", "year"];
 

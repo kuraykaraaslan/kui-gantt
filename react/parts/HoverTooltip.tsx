@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import type { Task } from "../../modules/gantt/gantt.types";
+import type { Task } from "../../modules/gantt/gantt.types.js";
 
 const MS_PER_DAY = 86400000;
 

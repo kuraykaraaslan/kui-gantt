@@ -2,12 +2,24 @@
   "name": "@kuraykaraaslan/kui-gantt",
   "version": "0.0.1",
   "description": "Standalone Gantt chart — vanilla TS core + optional React subpath. WBS tree, drag/resize, dependency arrows, critical path, baseline ghosts, export.",
-  "keywords": ["gantt", "react", "typescript", "scheduler", "project-management", "kui"],
+  "keywords": [
+    "gantt",
+    "react",
+    "typescript",
+    "scheduler",
+    "project-management",
+    "kui"
+  ],
   "license": "Apache-2.0",
   "author": "Kuray Karaaslan <kuraykaraaslan@gmail.com>",
   "homepage": "https://github.com/kuraykaraaslan/kui-gantt#readme",
-  "bugs": { "url": "https://github.com/kuraykaraaslan/kui-gantt/issues" },
-  "repository": { "type": "git", "url": "git+https://github.com/kuraykaraaslan/kui-gantt.git" },
+  "bugs": {
+    "url": "https://github.com/kuraykaraaslan/kui-gantt/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuraykaraaslan/kui-gantt.git"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/modules/index.d.ts",
@@ -22,16 +34,26 @@
     },
     "./styles.css": "./dist/styles.css"
   },
-  "files": ["dist", "README.md", "LICENSE"],
-  "sideEffects": ["**/*.css"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "peerDependencies": {
     "react": "^18 || ^19",
     "react-dom": "^18 || ^19",
     "zustand": "^5.0.0"
   },
   "peerDependenciesMeta": {
-    "react": { "optional": true },
-    "react-dom": { "optional": true }
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.3.1",
@@ -41,12 +63,14 @@
     "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@typescript/native": "npm:typescript@^7.0.2",
     "@vitejs/plugin-react": "^6.1.1",
     "postcss": "^8.5.28",
+    "publint": "^0.3.24",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "tailwindcss": "^4.3.3",
@@ -62,6 +86,8 @@
     "build": "pnpm build:js && pnpm build:types && pnpm build:css",
     "build:demo": "vite build --config vite.config.demo.ts",
     "preview:demo": "vite preview --config vite.config.demo.ts",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "typecheck": "tsc --noEmit",
+    "check:package": "publint && attw --pack . --profile esm-only --exclude-entrypoints ./styles.css"
   }
 }

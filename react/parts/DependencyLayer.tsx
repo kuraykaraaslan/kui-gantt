@@ -1,9 +1,9 @@
 import { useMemo } from "react";
-import type { Task, TaskId } from "../../modules/gantt/gantt.types";
-import { BAR_HEIGHT, ROW_HEIGHT } from "../../modules/gantt/gantt.types";
-import { diffDays } from "../../modules/gantt/gantt.timeline";
-import { useGanttStore } from "../hooks/useGanttStore";
-import { DependencyArrow } from "./DependencyArrow";
+import type { Task, TaskId } from "../../modules/gantt/gantt.types.js";
+import { BAR_HEIGHT, ROW_HEIGHT } from "../../modules/gantt/gantt.types.js";
+import { diffDays } from "../../modules/gantt/gantt.timeline.js";
+import { useGanttStore } from "../hooks/useGanttStore.js";
+import { DependencyArrow } from "./DependencyArrow.js";
 
 type DependencyLayerProps = {
   tasks: Task[];

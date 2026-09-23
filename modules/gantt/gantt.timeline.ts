@@ -1,5 +1,5 @@
-import type { Task, TimeUnit } from "./gantt.types";
-import { PIXELS_PER_DAY } from "./gantt.types";
+import type { Task, TimeUnit } from "./gantt.types.js";
+import { PIXELS_PER_DAY } from "./gantt.types.js";
 
 export const MS_PER_DAY = 86400000;
 

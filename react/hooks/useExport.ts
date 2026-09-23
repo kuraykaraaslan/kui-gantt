@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import type { Dependency, Task } from "../../modules/gantt/gantt.types";
+import type { Dependency, Task } from "../../modules/gantt/gantt.types.js";
 
 export type ExportFormat = "png" | "pdf" | "csv";
 

@@ -1,6 +1,6 @@
 import { useStore } from "zustand/react";
-import { useGanttEngine } from "./useGanttEngine";
-import type { GanttStore, GanttStoreApi } from "../../modules/gantt/gantt.store";
+import { useGanttEngine } from "./useGanttEngine.js";
+import type { GanttStore, GanttStoreApi } from "../../modules/gantt/gantt.store.js";
 
 export function useGanttStore<T>(selector: (s: GanttStore) => T): T {
   const engine = useGanttEngine();

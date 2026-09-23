@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { GanttEngineContext } from "../GanttEngineContext";
-import type { GanttEngine } from "../../modules/gantt/gantt.engine";
+import { GanttEngineContext } from "../GanttEngineContext.js";
+import type { GanttEngine } from "../../modules/gantt/gantt.engine.js";
 
 export function useGanttEngine(): GanttEngine {
   const engine = useContext(GanttEngineContext);

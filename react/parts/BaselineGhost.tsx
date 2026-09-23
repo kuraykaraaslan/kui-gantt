@@ -1,6 +1,6 @@
-import type { Baseline } from "../../modules/gantt/gantt.types";
-import { BAR_HEIGHT, ROW_HEIGHT } from "../../modules/gantt/gantt.types";
-import { diffDays } from "../../modules/gantt/gantt.timeline";
+import type { Baseline } from "../../modules/gantt/gantt.types.js";
+import { BAR_HEIGHT, ROW_HEIGHT } from "../../modules/gantt/gantt.types.js";
+import { diffDays } from "../../modules/gantt/gantt.timeline.js";
 
 type BaselineGhostProps = {
   baseline: Baseline;

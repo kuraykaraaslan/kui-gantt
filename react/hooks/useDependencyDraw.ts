@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
-import type { Dependency } from "../../modules/gantt/gantt.types";
-import { useGanttStoreApi } from "./useGanttStore";
+import type { Dependency } from "../../modules/gantt/gantt.types.js";
+import { useGanttStoreApi } from "./useGanttStore.js";
 
 export type UseDependencyDrawApi = {
   beginFromTask: (e: React.PointerEvent<HTMLElement>, sourceId: string) => void;

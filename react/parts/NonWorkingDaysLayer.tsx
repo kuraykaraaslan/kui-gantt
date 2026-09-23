@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { addDays } from "../../modules/gantt/gantt.timeline";
+import { addDays } from "../../modules/gantt/gantt.timeline.js";
 
 type NonWorkingDaysLayerProps = {
   rangeStart: Date;

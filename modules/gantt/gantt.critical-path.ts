@@ -1,4 +1,4 @@
-import type { Dependency, Task, TaskId } from "./gantt.types";
+import type { Dependency, Task, TaskId } from "./gantt.types.js";
 
 const MS_PER_DAY = 86400000;
 

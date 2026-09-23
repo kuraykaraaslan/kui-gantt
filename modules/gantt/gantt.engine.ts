@@ -1,5 +1,5 @@
-import { createGanttStore, type GanttStoreApi, type GanttStore, type GanttStoreOptions } from "./gantt.store";
-import type { TimeUnit } from "./gantt.types";
+import { createGanttStore, type GanttStoreApi, type GanttStore, type GanttStoreOptions } from "./gantt.store.js";
+import type { TimeUnit } from "./gantt.types.js";
 
 export type GanttEngineOptions = {
   tasks?: GanttStoreOptions["tasks"];

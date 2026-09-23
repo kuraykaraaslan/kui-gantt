@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
-import { cn } from "../libs/utils/cn";
-import type { GanttProps } from "../modules/gantt/gantt.types";
-import type { GanttStore } from "../modules/gantt/gantt.store";
-import { DEFAULT_MESSAGES } from "../modules/gantt/gantt.types";
-import { GanttEngine } from "../modules/gantt/gantt.engine";
-import { GanttEngineContext } from "./GanttEngineContext";
-import { GanttToolbar } from "./parts/GanttToolbar";
-import { GanttBody } from "./parts/GanttBody";
-import { useGanttStore } from "./hooks/useGanttStore";
-import { useExport } from "./hooks/useExport";
-import type { ExportFormat } from "./hooks/useExport";
+import { cn } from "../libs/utils/cn.js";
+import type { GanttProps } from "../modules/gantt/gantt.types.js";
+import type { GanttStore } from "../modules/gantt/gantt.store.js";
+import { DEFAULT_MESSAGES } from "../modules/gantt/gantt.types.js";
+import { GanttEngine } from "../modules/gantt/gantt.engine.js";
+import { GanttEngineContext } from "./GanttEngineContext.js";
+import { GanttToolbar } from "./parts/GanttToolbar.js";
+import { GanttBody } from "./parts/GanttBody.js";
+import { useGanttStore } from "./hooks/useGanttStore.js";
+import { useExport } from "./hooks/useExport.js";
+import type { ExportFormat } from "./hooks/useExport.js";
 
 type InnerProps = Omit<GanttProps, "tasks" | "dependencies"> & {
   mergedMessages: Required<NonNullable<GanttProps["messages"]>>;

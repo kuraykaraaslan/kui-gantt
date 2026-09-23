@@ -1,4 +1,4 @@
-import { diffDays } from "../../modules/gantt/gantt.timeline";
+import { diffDays } from "../../modules/gantt/gantt.timeline.js";
 
 type TodayLineProps = {
   rangeStart: Date;

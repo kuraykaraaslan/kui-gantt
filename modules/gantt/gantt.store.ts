@@ -9,7 +9,7 @@ import type {
   Task,
   TaskId,
   TimeUnit,
-} from "./gantt.types";
+} from "./gantt.types.js";
 
 export type GanttState = {
   scale: TimeUnit;

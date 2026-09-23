@@ -1,10 +1,10 @@
-import { cn } from "../../libs/utils/cn";
+import { cn } from "../../libs/utils/cn.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faBolt } from "@fortawesome/free-solid-svg-icons";
-import type { GanttMessages, TimeUnit } from "../../modules/gantt/gantt.types";
-import { useGanttStore } from "../hooks/useGanttStore";
-import { ExportMenu } from "./ExportMenu";
-import type { ExportFormat } from "../hooks/useExport";
+import type { GanttMessages, TimeUnit } from "../../modules/gantt/gantt.types.js";
+import { useGanttStore } from "../hooks/useGanttStore.js";
+import { ExportMenu } from "./ExportMenu.js";
+import type { ExportFormat } from "../hooks/useExport.js";
 
 const SCALES: TimeUnit[] = ["day", "week", "month", "quarter", "year"];
 

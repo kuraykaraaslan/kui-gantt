@@ -1,9 +1,9 @@
-export { Gantt } from "./Gantt";
-export { GanttEngineContext } from "./GanttEngineContext";
-export { useGanttEngine } from "./hooks/useGanttEngine";
-export { useGanttStore, useGanttStoreApi } from "./hooks/useGanttStore";
-export { useTimelineScale } from "./hooks/useTimelineScale";
-export { useCriticalPath } from "./hooks/useCriticalPath";
-export { useResourceConflicts } from "./hooks/useResourceConflicts";
-export { useExport } from "./hooks/useExport";
-export type { ExportFormat } from "./hooks/useExport";
+export { Gantt } from "./Gantt.js";
+export { GanttEngineContext } from "./GanttEngineContext.js";
+export { useGanttEngine } from "./hooks/useGanttEngine.js";
+export { useGanttStore, useGanttStoreApi } from "./hooks/useGanttStore.js";
+export { useTimelineScale } from "./hooks/useTimelineScale.js";
+export { useCriticalPath } from "./hooks/useCriticalPath.js";
+export { useResourceConflicts } from "./hooks/useResourceConflicts.js";
+export { useExport } from "./hooks/useExport.js";
+export type { ExportFormat } from "./hooks/useExport.js";
