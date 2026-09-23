@@ -4,6 +4,7 @@
     "declaration": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
+    "types": [],
     "outDir": "./dist"
   },
   "include": ["modules/**/*", "react/**/*", "libs/**/*"],
